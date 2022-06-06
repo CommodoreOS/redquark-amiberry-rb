@@ -328,9 +328,7 @@ void target_execute(const char* command)
 	set_mouse_grab(false);
 	try
 	{
-#if !defined REDQUARK
 		system(command);
-#endif
 	}
 	catch (...)
 	{
